@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
-
 :root{
     --background:#000000;
     --red:#C20000;
     --blue:#001F70;
     --gradient:linear-gradient(180deg, #000000 0%, rgba(83,83,83,0.577381) 25%, rgba(196,196,196, 5%));
-
     --font: 'Titillium Web', sans-serif;
 }
 *{ /*todos os elementos terão essas configs*/
@@ -23,15 +21,15 @@ img{
 }
 .topo{
     width:100%;
-    height:5em;
+    height:4em;
     text-align:center;
+    padding-top:3px;
 }
 .content{
     width:80%;
     height:100%;
     max-width:70em;
     margin:auto;
-    
 }
 .flex-center-bt{
     display:flex;
@@ -42,6 +40,12 @@ img{
 .jogos{
     background-color:black;
     padding-top:0;
+    height:100%;
+}
+
+.flex-center-bt a:hover{
+    transform: scale(2);
+    transition-duration: 0.3s;
 }
 .topo img{
     max-width:15em;
@@ -49,8 +53,7 @@ img{
 .menu{
     width:80%;
     max-width:50em;
-
-}
+   }
 .menu ul{
     list-style-type:none;
     display:flex;
@@ -65,11 +68,9 @@ img{
 }
 .menu a:hover{
     background-color:var(--red);
-
 }
 main{
-    background-color:var(--red);
-
+    background-color:black;
 }
 #menu-bars{
     display:none;
@@ -90,7 +91,7 @@ main{
     margin:auto;
     display:flex;
     justify-content:flex-end;
-    margin-top:-70px;
+   
 }
 .banner-text{
     width:40%;
@@ -119,12 +120,64 @@ font-size:3.5em;
     border-radius:0.5em;
     margin-top:0.8em;
 }
+.about{
+    background-color: var(--blue);
+    width:100%;
+    position:relative;
+    height:400px;
+}
+.about-angulation{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.angulation{
+    width:100%;
+    height:22em;
+    background-color:black;
+    transform:skewY(-3deg);
+}
+.about-position{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:100px;
+}
+.content-flex-center-bt {
+    background-color:transparent;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    
+}
+
+.about-text{
+    color:white;
+    width:50%;
+    color:#fff;
+    text-align:justify;
+}
+.about-text-h2{
+    font-size:2em;
+    margin-bottom:1.2em;
+}
+.about-text p{
+   font-size:1.12em;
+   margin-bottom:1em;
+}
+.about-position img{
+    max-width:28em;
+    width:22%;
+}
 
 @media screen and (max-width:1999px){
 
 }
 @media screen and (max-width:767px){
-
 }
 @media screen and (max-width:575px){
 .menu-bars{
