@@ -53,8 +53,7 @@ img{
 }
 .menu{
     width:80%;
-    max-width:50em;
-   }
+    }
 .menu ul{
     list-style-type:none;
     display:flex;
@@ -94,6 +93,9 @@ main{
     justify-content:flex-end;
    
 }
+footer ul{
+    margin-right:100px;
+}
 .banner-text{
     width:40%;
     height:100%;
@@ -102,6 +104,7 @@ main{
     justify-content:center;
     align-items:center;
     color:#fff;
+    margin-top:-8%;
 }
 .banner-text h1{
 font-size:3.5em;
@@ -125,7 +128,7 @@ font-size:3.5em;
     background-color: var(--blue);
     width:100%;
     position:relative;
-    height:400px;
+    height:380px;
 }
 .about-angulation{
     width:100%;
@@ -222,7 +225,7 @@ font-size:3.5em;
     margin-right:10px;
 }
 .news{
-    background-color:rgb(15, 15, 15);
+    background-color:rgb(12, 12, 12);
     height:80%;
     color:white;
     width:100%;
@@ -260,7 +263,7 @@ aside{
      letter-spacing:2px;
  }
 .match-box{
-    height:660px;
+    height:fit-content;
     background-image:linear-gradient(180deg,rgba(0, 0, 0, 0.767), rgba(73, 73, 73, 0.993), rgba(0, 0, 0, 0.97));
 }
 
@@ -280,17 +283,19 @@ aside{
 footer{
     background-color:black;
     color:white;
-    width:100%;
-    height:180px;
+    width:90%;
+    height:fit-content;
     display:flex;
     justify-content: center;
+    margin-left:5%;
+    margin-right:5%;
 }
 footer img{
     width:16%;
 }
 footer ul{
     list-style-type:none;
-    margin-right:100px;
+    
 }
 footer li a{
     text-decoration:none;
@@ -298,6 +303,7 @@ footer li a{
     font-size:13px;
     line-height:none;
 }
+
 .footer-left{
     margin-top:100px;
     margin-left:300px;
@@ -347,14 +353,154 @@ footer li a{
    
 }
 @media screen and (max-width:74.93em){
+    .menu a{
+    font-size:0.8em;
+    padding:0.7em 1.5em;
+    }
+    .banner-text h1{
+    font-size:2.2em;
+    }
+    .banner-text p{
+    font-size:1em;
+    text-align:center;
+    }
+    .banner-text{
+    margin-top:-22%;
+    }
+    .banner-text a{
+    font-size:0.9em;
+    }
+    footer li a{
+    font-size:11px;
+}
+.about-text{
+    width:50%;
+    margin-left:30px;
+}
 
+.newsletter input[type="email"]{
+    width:7em;
+    height:1.5em;
+    font-size:10px;
+    padding-left:1em;
+ }
+ .newsletter input[type="email"]::placeholder{
+     color:rgb(102,102,102);
+     font-weight:bold;
+ }
+ .newsletter input[type="submit"]{
+     width:7em;
+     height:1.5em;
+     font-size:10px;
+     
+ }
+ .siga-nos h2{
+     font-size: 15px;
+ }
+ .about-text p{
+    font-size:0.9em;
+    margin-bottom:1em;
+    margin-right:60px;
+    margin-top:10px;
+ }
+ .jogos2{
+     width:90%;
+ }
+ .card{
+     width:35%;
+ }
 }
 
 @media screen and (max-width:47.93em){
+    .banner-text{
+        margin-top:-33%;
+        margin-left:100px;
+    }
+    .banner-text h1{
+        font-size:1.85em;
+    }
+    .banner-text p{
+        font-size:0.85em;
+        width:100%;
+        text-align:center;
+    }
+    .about-position{
+        margin-top:-10%;
+    }
+    .angulation{
+        margin-top:-8%;
+        height:18em;
+    }
+    .jogos2{
+        font-size:0.8em;
+    }
+    .jogos2 h2{
+        font-size:14px;
+        
+    }
+    .jogos2 img{
+        width:25px;
+    }
+    .card{
+        width:55%;
+        margin:20px;
+    }
 }
-
-@media screen and (max-width:35.93em){
+@media screen and (max-width:36.93em){
 .menu-bars{
-    display:inline-block;
+    display:block;
+    color:white;
+}
+.menu a{
+    display:none;
+}
+.banner-text h1{
+    font-size:1em;
+    }
+    .banner-text p{
+    font-size:0.5em;
+    width:500px;
+    text-align:justify;
+
+    }
+    .about-angulation{
+        display:flex;
+        justify-content:space-between;
+               
+    }
+    .banner-text{
+    margin-top:-70%;
+    }
+    .about-text h2{
+        font-size:18px;
+    }
+    .banner-text a{
+    font-size:0.6em;
+    }
+    .about-text{
+        margin-top:-5%;
+    }
+    .angulation{
+        height:19em;
+    }
+.card{
+    display:block;
+    width:70%;
+    margin-left:15%;
+}
+.match{
+    width:80%;
+    margin-left:0;
+    margin-right:0;
+    
+}
+.match img{
+    width:18px;
+}
+.match p{
+    font-size:13px;
+}
+footer img{
+    margin-left:50px;
 }
 }
